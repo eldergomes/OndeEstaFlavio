@@ -1,0 +1,254 @@
+# Cidades do jogo. "pistas" são dicas geográficas/culturais que APONTAM para esta cidade
+# (o jogador as ouve na cidade anterior). Textos originais; fatos geográficos verificáveis.
+- id: brasilia
+  nome: Brasília
+  pais: Brasil
+  lat: -15.79
+  lon: -47.88
+  descricao: "Capital federal planejada por Lúcio Costa, com edifícios de Oscar Niemeyer, inaugurada em 1960."
+  locais:
+    - {id: senado, nome: Anexo do Senado}
+    - {id: aeroporto, nome: Aeroporto JK}
+    - {id: lago, nome: Orla do Lago Paranoá}
+  pistas:
+    - "Disse que estava cansado do Eixo Monumental e dos prédios de Niemeyer."
+    - "Mencionou que sentiria falta do pôr do sol no Lago Paranoá."
+    - "Perguntou se ainda dava tempo de visitar a Catedral de Niemeyer."
+- id: rio
+  nome: Rio de Janeiro
+  pais: Brasil
+  lat: -22.91
+  lon: -43.17
+  descricao: "Antiga capital do país, entre o mar e a montanha, com o Cristo Redentor no alto do Corcovado."
+  locais:
+    - {id: aeroporto, nome: Galeão}
+    - {id: hotel, nome: Hotel em Copacabana}
+    - {id: porto, nome: Píer Mauá}
+  pistas:
+    - "Queria ver o Pão de Açúcar uma última vez."
+    - "Comentou sobre o Cristo Redentor no Corcovado."
+    - "Perguntou se o calçadão de Copacabana estava cheio."
+- id: sao-paulo
+  nome: São Paulo
+  pais: Brasil
+  lat: -23.55
+  lon: -46.63
+  descricao: "Maior cidade do Brasil e centro financeiro do país."
+  locais:
+    - {id: aeroporto, nome: Aeroporto de Guarulhos}
+    - {id: banco, nome: Agência na Avenida Paulista}
+    - {id: rodoviaria, nome: Terminal Tietê}
+  pistas:
+    - "Falou em passar na Avenida Paulista."
+    - "Perguntou quanto tempo leva para chegar a Guarulhos."
+    - "Disse que queria ver o vão livre do MASP."
+- id: foz
+  nome: Foz do Iguaçu
+  pais: Brasil
+  lat: -25.55
+  lon: -54.59
+  descricao: "Cidade paranaense na tríplice fronteira com Argentina e Paraguai, famosa pelas cataratas."
+  locais:
+    - {id: fazenda, nome: Estrada rural}
+    - {id: ponte, nome: Cabeceira da Ponte Tancredo Neves}
+    - {id: hotel, nome: Hotel perto das cataratas}
+  pistas:
+    - "Disse que queria ver as Cataratas do Iguaçu."
+    - "Perguntou sobre a usina de Itaipu."
+    - "Mencionou a tríplice fronteira entre Brasil, Argentina e Paraguai."
+- id: puerto-iguazu
+  nome: Puerto Iguazú
+  pais: Argentina
+  lat: -25.60
+  lon: -54.57
+  descricao: "Cidade da província argentina de Misiones, do outro lado do rio Iguaçu."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Internacional Cataratas del Iguazú}
+    - {id: aduana, nome: Posto de migração}
+    - {id: cambio, nome: Casa de câmbio}
+  pistas:
+    - "Perguntou se aceitavam reais na província de Misiones."
+    - "Queria ver a Garganta do Diabo pelo lado argentino."
+    - "Pediu a cotação do peso argentino."
+- id: buenos-aires
+  nome: Buenos Aires
+  pais: Argentina
+  lat: -34.60
+  lon: -58.38
+  descricao: "Capital da Argentina, às margens do Rio da Prata."
+  locais:
+    - {id: aeroporto, nome: Aeroparque}
+    - {id: hotel, nome: Hotel em Recoleta}
+    - {id: cafe, nome: Café em San Telmo}
+  pistas:
+    - "Perguntou onde fica a Casa Rosada."
+    - "Falou do obelisco da Avenida 9 de Julio."
+    - "Queria assistir a um tango em San Telmo."
+- id: montevideu
+  nome: Montevidéu
+  pais: Uruguai
+  lat: -34.90
+  lon: -56.16
+  descricao: "Capital do Uruguai, com uma longa rambla à beira do Rio da Prata."
+  locais:
+    - {id: aeroporto, nome: Aeroporto de Carrasco}
+    - {id: porto, nome: Terminal de balsas}
+    - {id: mercado, nome: Mercado del Puerto}
+  pistas:
+    - "Mencionou a Rambla à beira do Rio da Prata."
+    - "Perguntou sobre o Palácio Salvo."
+    - "Disse que queria provar um chivito."
+- id: assuncao
+  nome: Assunção
+  pais: Paraguai
+  lat: -25.26
+  lon: -57.58
+  descricao: "Capital do Paraguai, às margens do rio Paraguai."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Silvio Pettirossi}
+    - {id: cambio, nome: Casa de câmbio}
+    - {id: hotel, nome: Hotel no centro}
+  pistas:
+    - "Queria trocar dinheiro por guaranis."
+    - "Perguntou sobre o Palácio de López."
+    - "Falou em ver o pôr do sol no rio Paraguai."
+- id: santa-cruz
+  nome: Santa Cruz de la Sierra
+  pais: Bolívia
+  lat: -17.78
+  lon: -63.18
+  descricao: "A cidade mais populosa da Bolívia, nas planícies do oriente do país."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Viru Viru}
+    - {id: praca, nome: Praça 24 de Setembro}
+    - {id: hotel, nome: Hotel no centro}
+  pistas:
+    - "Mencionou o aeroporto de Viru Viru."
+    - "Queria trocar dinheiro por bolivianos."
+    - "Perguntou sobre a Praça 24 de Setembro."
+- id: lima
+  nome: Lima
+  pais: Peru
+  lat: -12.05
+  lon: -77.04
+  descricao: "Capital do Peru, à beira do Pacífico, fundada às margens do rio Rímac."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Jorge Chávez}
+    - {id: restaurante, nome: Cevicheria em Miraflores}
+    - {id: hotel, nome: Hotel em San Isidro}
+  pistas:
+    - "Queria comer ceviche em Miraflores."
+    - "Perguntou a cotação do sol peruano."
+    - "Falou das falésias de frente para o Pacífico."
+- id: guayaquil
+  nome: Guayaquil
+  pais: Equador
+  lat: -2.19
+  lon: -79.89
+  descricao: "Maior porto do Equador, às margens do rio Guayas."
+  locais:
+    - {id: aeroporto, nome: Aeroporto José Joaquín de Olmedo}
+    - {id: malecon, nome: Malecón 2000}
+    - {id: hangar, nome: Hangar de aviação executiva}
+  pistas:
+    - "Perguntou sobre o Malecón à beira do rio Guayas."
+    - "Comentou que lá a moeda oficial é o dólar americano."
+    - "Falou do maior porto do Equador."
+- id: bogota
+  nome: Bogotá
+  pais: Colômbia
+  lat: 4.71
+  lon: -74.07
+  descricao: "Capital da Colômbia, a cerca de 2.600 metros de altitude."
+  locais:
+    - {id: aeroporto, nome: Aeroporto El Dorado}
+    - {id: museu, nome: Museu do Ouro}
+    - {id: hotel, nome: Hotel na Zona Rosa}
+  pistas:
+    - "Reclamou do frio a 2.600 metros de altitude."
+    - "Queria visitar o Museu do Ouro."
+    - "Pediu a cotação do peso colombiano."
+- id: panama
+  nome: Cidade do Panamá
+  pais: Panamá
+  lat: 8.98
+  lon: -79.52
+  descricao: "Capital do Panamá, junto ao canal que liga o Atlântico ao Pacífico."
+  locais:
+    - {id: aeroporto, nome: Aeroporto de Tocumen}
+    - {id: canal, nome: Eclusas de Miraflores}
+    - {id: banco, nome: Banco no centro financeiro}
+  pistas:
+    - "Perguntou sobre o canal que liga o Atlântico ao Pacífico."
+    - "Comentou que por lá o balboa circula junto com o dólar."
+    - "Queria passear pelo Casco Viejo."
+- id: miami
+  nome: Miami
+  pais: Estados Unidos
+  lat: 25.76
+  lon: -80.19
+  descricao: "Cidade da Flórida, porta de entrada latino-americana nos Estados Unidos."
+  locais:
+    - {id: opa-locka, nome: Aeroporto executivo de Opa-locka}
+    - {id: calle-ocho, nome: "Calle Ocho, Little Havana"}
+    - {id: condominio, nome: Condomínio em Brickell}
+  pistas:
+    - "Perguntou como é a Calle Ocho, em Little Havana."
+    - "Comentou sobre as praias de South Beach."
+    - "Disse que queria ver os Everglades."
+- id: washington
+  nome: Washington
+  pais: Estados Unidos
+  lat: 38.91
+  lon: -77.04
+  descricao: "Capital dos Estados Unidos, às margens do rio Potomac."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Dulles}
+    - {id: mall, nome: National Mall}
+    - {id: hotel, nome: Hotel em Georgetown}
+  pistas:
+    - "Queria ver a cúpula do Capitólio."
+    - "Perguntou sobre o National Mall."
+    - "Falou em caminhar pela margem do Potomac."
+- id: lisboa
+  nome: Lisboa
+  pais: Portugal
+  lat: 38.72
+  lon: -9.14
+  descricao: "Capital de Portugal, construída em colinas sobre o estuário do Tejo."
+  locais:
+    - {id: aeroporto, nome: Aeroporto Humberto Delgado}
+    - {id: eletrico, nome: Parada do elétrico 28}
+    - {id: hotel, nome: Hotel no Chiado}
+  pistas:
+    - "Queria andar no elétrico 28."
+    - "Comentou sobre a Torre de Belém."
+    - "Falou em comer pastel de nata."
+- id: roma
+  nome: Roma
+  pais: Itália
+  lat: 41.90
+  lon: 12.50
+  descricao: "Capital da Itália, cortada pelo rio Tibre."
+  locais:
+    - {id: aeroporto, nome: Aeroporto de Fiumicino}
+    - {id: fontana, nome: Fontana di Trevi}
+    - {id: hotel, nome: Hotel no Trastevere}
+  pistas:
+    - "Falou em jogar uma moeda na Fontana di Trevi."
+    - "Perguntou sobre o Coliseu."
+    - "Mencionou um passeio pelo Trastevere, à beira do Tibre."
+- id: madri
+  nome: Madri
+  pais: Espanha
+  lat: 40.42
+  lon: -3.70
+  descricao: "Capital da Espanha, no centro da Península Ibérica."
+  locais:
+    - {id: aeroporto, nome: Aeroporto de Barajas}
+    - {id: museu, nome: Museu do Prado}
+    - {id: hotel, nome: Hotel na Gran Vía}
+  pistas:
+    - "Queria visitar o Museu do Prado."
+    - "Mencionou a Puerta del Sol."
+    - "Falou de um jogo no Santiago Bernabéu."

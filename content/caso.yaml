@@ -1,0 +1,36 @@
+titulo: "Onde está Flávio Bolsonaro?"
+inicio: "2026-10-27T11:00:00-03:00"   # fim do prazo do STF para entrega dos passaportes
+prazo_horas: 48   # tempo total de investigação (terça 11h → quinta 11h)
+briefing:
+  imprensa: >-
+    Terça-feira, 11h. Venceu o prazo do STF para o senador entregar os passaportes, e ninguém
+    sabe onde ele está. Ele é investigado por lavagem de dinheiro e nega as acusações. Siga as
+    pistas, cheque o que a imprensa publica e monte o dossiê com o país de destino antes que o
+    prazo acabe.
+  ficcao: >-
+    Modo ficção: a rota deste caso é sorteada e não corresponde aos fatos noticiados.
+    Siga as pistas geográficas e monte o dossiê com o país de destino antes do prazo.
+# Rota noticiada (modo imprensa). A primeira cidade é onde o jogador começa.
+rota: [brasilia, foz, puerto-iguazu, guayaquil, miami]
+# Fatos que apontam para a PRÓXIMA cidade, indexados pela cidade atual.
+pistas:
+  brasilia: [c5n-fazenda-foz, pf-aciona-argentina]
+  foz: [migracoes-ponte, c5n-van]
+  puerto-iguazu: [gulfstream-guayaquil, flightradar-escala]
+  guayaquil: [decolagem-opa-locka, cnbc-desembarque, aliados-eua]
+distratores: [marinho-nega, casa-rosada-nega, lanacion-cancelado, iguazu-ahora-lista, pf-sem-registro, vistos-eua]
+# Falas na cidade final, nos locais onde o alvo NÃO está (texto inventado).
+perto:
+  - "Uma família brasileira com muita bagagem passou por aqui há poucas horas."
+  - "Vi seguranças particulares conferindo a rua. Alguém importante está por perto."
+nada:
+  - "Ninguém com essa descrição passou por aqui."
+  - "Não vi nenhum brasileiro hoje, agente."
+  - "Isso não me diz nada. Tem certeza de que está na cidade certa?"
+desfecho:
+  vitoria: >-
+    Você reconstituiu a rota e o dossiê foi encaminhado à cooperação internacional a tempo.
+    (Desfecho fictício.)
+  dossie_errado: "O dossiê apontava o país errado e foi devolvido. A pista esfriou."
+  sem_dossie: "Você o localizou, mas não tinha dossiê emitido. Sem papel, nada feito."
+  prazo: "O prazo acabou. O caso foi arquivado por enquanto."

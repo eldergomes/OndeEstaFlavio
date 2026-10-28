@@ -1,0 +1,22 @@
+# Matérias usadas como base. Toda pista "de imprensa" referencia ao menos uma destas.
+# Acessadas em 2026-10-28.
+- id: cnn-o-que-se-sabe
+  veiculo: CNN Brasil
+  titulo: O que se sabe sobre a fuga de Flávio Bolsonaro do Brasil
+  url: https://www.cnnbrasil.com.br/politica/o-que-se-sabe-sobre-a-saida-de-flavio-bolsonaro-do-brasil/
+  publicado: 2026-10-27
+- id: aosfatos-o-que-se-sabe
+  veiculo: Aos Fatos
+  titulo: O que se sabe sobre a fuga de Flávio Bolsonaro
+  url: https://www.aosfatos.org/noticias/o-que-se-sabe-suposta-fuga-flavio-bolsonaro/
+  publicado: 2026-10-27
+- id: bdf-argentina-equador
+  veiculo: Brasil de Fato
+  titulo: Flávio Bolsonaro fugiu pela Argentina na noite de terça (27) e fez escala no Equador antes de seguir para os EUA
+  url: https://www.brasildefato.com.br/2026/10/28/flavio-bolsonaro-fugiu-pela-argentina-na-noite-de-terca-27-e-fez-escala-no-equador-antes-de-seguir-para-os-eua/
+  publicado: 2026-10-28
+- id: metropoles-aliados
+  veiculo: Metrópoles
+  titulo: Fuga de Flávio Bolsonaro irrita aliados após promessa de ficar no Brasil
+  url: https://www.metropoles.com/brasil/fuga-de-flavio-bolsonaro-irrita-aliados-apos-promessa-de-ficar-no-brasil
+  publicado: 2026-10-27

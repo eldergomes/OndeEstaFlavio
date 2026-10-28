@@ -1,0 +1,84 @@
+# Fatos noticiados, sempre atribuídos. status:
+#   confirmado — confirmado por autoridade ou registro verificável segundo as fontes
+#   contestado — relato não confirmado ou com versões divergentes
+#   desmentido — contradito por informação posterior
+# "nota" é exibida ao jogador quando ele faz a checagem.
+
+# --- pistas que apontam para a próxima cidade da rota ---
+- id: c5n-fazenda-foz
+  texto: "A emissora argentina C5N disse que ele estava numa fazenda em Foz do Iguaçu desde a noite anterior."
+  fontes: [bdf-argentina-equador]
+  status: contestado
+  nota: "Relato da C5N reproduzido pelo Brasil de Fato; não há confirmação oficial do local."
+- id: pf-aciona-argentina
+  texto: "A PF acionou autoridades argentinas na manhã de terça (27) sobre o risco de fuga pela fronteira."
+  fontes: [cnn-o-que-se-sabe]
+  status: confirmado
+  nota: "Informado pela CNN Brasil."
+- id: migracoes-ponte
+  texto: "Segundo a Direção Nacional de Migrações argentina, a família cruzou a Ponte Internacional Tancredo Neves rumo a Puerto Iguazú às 22h50 de terça (27)."
+  fontes: [bdf-argentina-equador, aosfatos-o-que-se-sabe]
+  status: confirmado
+  nota: "Confirmado pela migração argentina na madrugada de 28/10, depois de negativas iniciais."
+- id: c5n-van
+  texto: "A C5N afirmou que o senador cruzou a fronteira para Misiones, na Argentina, em uma van."
+  fontes: [bdf-argentina-equador]
+  status: contestado
+  nota: "Detalhe do veículo não foi confirmado por autoridades."
+- id: gulfstream-guayaquil
+  texto: "Às 23h30, um Gulfstream G400 da empresa Baires Fly decolou de Puerto Iguazú com destino informado a Guayaquil."
+  fontes: [bdf-argentina-equador]
+  status: confirmado
+  nota: "Dados atribuídos à migração argentina."
+- id: flightradar-escala
+  texto: "O Flightradar24 mostrou a aeronave saindo de Puerto Iguazú e fazendo escala no Equador, em Guayaquil."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: confirmado
+  nota: "Registro de rastreamento de voo citado pelo Aos Fatos."
+- id: decolagem-opa-locka
+  texto: "O jatinho decolou de Guayaquil às 6h22 (Brasília) com previsão de pouso no aeroporto executivo de Opa-locka, em Miami."
+  fontes: [bdf-argentina-equador]
+  status: confirmado
+  nota: "Dados do FlightAware citados pelo Brasil de Fato."
+- id: cnbc-desembarque
+  texto: "A CNBC registrou o desembarque do senador na Flórida, em Miami, na manhã de quarta (28)."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: confirmado
+  nota: "Registro de mídia citado pelo Aos Fatos."
+- id: vistos-eua
+  texto: "O Departamento de Estado dos EUA confirmou que concederá vistos ao senador e à família."
+  fontes: [bdf-argentina-equador]
+  status: confirmado
+  nota: "Informado pelo Brasil de Fato."
+- id: aliados-eua
+  texto: "Aliados disseram que ele deixou o país com a família rumo aos Estados Unidos; autoridades americanas confirmaram à Reuters."
+  fontes: [cnn-o-que-se-sabe]
+  status: confirmado
+  nota: "Segundo a CNN Brasil, citando a Reuters."
+
+# --- distratores: versões que circularam e não se sustentaram ---
+- id: marinho-nega
+  texto: "O coordenador da campanha, Rogério Marinho, negou pela manhã que o senador tivesse deixado o país."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: desmentido
+  nota: "Mais tarde, aliados admitiram a viagem aos EUA."
+- id: casa-rosada-nega
+  texto: "A Casa Rosada disse que a migração argentina não registrou qualquer entrada do senador no país."
+  fontes: [cnn-o-que-se-sabe]
+  status: desmentido
+  nota: "Na madrugada de 28/10 a própria migração argentina confirmou a travessia."
+- id: lanacion-cancelado
+  texto: "O La Nación, citando a polícia aeroportuária, disse que um voo sem destino foi cancelado porque um dos quatro passageiros não chegou."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: contestado
+  nota: "Versão divergente das demais; não confirmada."
+- id: iguazu-ahora-lista
+  texto: "O Iguazú Ahora disse que um voo para Miami sairia às 17h, mas o aeroporto afirmou que ele não estava na lista de passageiros."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: contestado
+  nota: "Horário e lista divergem do que foi confirmado depois."
+- id: pf-sem-registro
+  texto: "A PF não encontrou registro de saída por posto regular de migração e não descarta saída clandestina."
+  fontes: [aosfatos-o-que-se-sabe]
+  status: contestado
+  nota: "Era o estado da apuração na terça (27); a travessia foi registrada do lado argentino."
