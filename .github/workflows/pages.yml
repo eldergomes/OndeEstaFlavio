@@ -1,0 +1,85 @@
+name: CI e GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Mínimo por padrão; o job de deploy eleva só o que precisa.
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          enable-cache: true
+
+      - name: Backend — dependências travadas
+        run: uv sync --frozen --python 3.12
+
+      - name: Backend — lint, tipos, segurança
+        run: |
+          uv run ruff check .
+          uv run mypy
+          uv run bandit -q -c pyproject.toml -r backend
+          uv run pip-audit --skip-editable
+
+      - name: Backend — testes e validação de jogabilidade
+        run: |
+          uv run pytest -q
+          uv run rota validate --seeds 300
+
+      - name: Exportar dados do jogo
+        run: uv run rota export
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Frontend — instalar, auditar, testar e compilar
+        working-directory: web
+        run: |
+          npm ci
+          npm audit --audit-level=moderate
+          npm test
+          npm run build
+          # artefatos de teste não vão para produção
+          rm -f dist/data/golden.json dist/data/schema.json
+
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+        if: github.event_name != 'pull_request'
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        if: github.event_name != 'pull_request'
+        with:
+          path: web/dist
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
